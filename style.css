@@ -23,6 +23,7 @@ body {
   font-size: 17px;
 }
 
+
 .nav a:hover {
   background-color: rgba(222, 215, 219, 0.4);
   color: black;
@@ -31,4 +32,55 @@ body {
 .active {
   background-color: rgb(145, 17, 92);
   color: white;
+}
+
+.nav .icon {
+  display: none;
+}
+.nav .visible {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .nav a:not(.active) {
+    display: none;
+  }
+
+  .nav a.icon {
+    float: right;
+    display: block;
+  }
+  
+  .nav :last-child {
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .nav a.icon{
+    display: block;
+  }
+
+  .nav.responsive { 
+    position: relative
+  }
+
+  .nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .entry{
+    display: none;
+  }
+
+  .navigation{
+    width: 100%;
+  }
 }

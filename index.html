@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width" />
 	<title>Sticky Header</title> 
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="">
+	<script src="script.js"></script>
 </head>
 <body>
 	<nav class="nav" id="myTopnav">
@@ -13,11 +15,14 @@
 			<a href="#news">About</a>
 			<a href="#contact">Contacts</a>
 			<a href="#about">Location</a>
+			<a href="#login" class="visible">Log in</a>
+			<a href="#logout" class="visible">Log out</a>
 		</div>
 		<div class="entry">
 			<a href="#login">Log in</a>
 			<a href="#logout">Log out</a>
 		</div>
+		<a class="icon" onclick="setAdditionalMenu()">&#9776;</a>
 	</nav>
 
 </body>
